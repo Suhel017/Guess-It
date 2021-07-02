@@ -1,0 +1,17 @@
+import random
+randNumber=random.randint(1,100)
+
+userGuess=None
+guess=0
+while(userGuess!=randNumber):
+    userGuess=int(input('Enter your number:\n'))
+    guess+=1
+    if (userGuess==randNumber):
+        print('Congratulations your guess is right!')
+
+    else:
+        if(userGuess>randNumber):
+            print('You guessed it wrong ! Enter smaller number ')
+        else:
+            print('You guessed it wrong ! Enter larger number')
+print(f'you have guessed the no. total {guess} guesses')
